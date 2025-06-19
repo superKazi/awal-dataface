@@ -3,8 +3,6 @@ import type { LayoutServerLoad } from './$types';
 import type { Cost, InsuranceType, DataSource, GeoLevel } from '$lib/types';
 import costcsv from '$lib/data/cost.csv?raw';
 
-export const prerender = true;
-
 export const load: LayoutServerLoad = async ({ params }) => {
 	let costs: Cost[] = csvParse(costcsv, (d) => ({
 		geo_level: d.geo_level as GeoLevel,

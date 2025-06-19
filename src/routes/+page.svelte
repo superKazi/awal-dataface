@@ -10,6 +10,7 @@
 		{#each procedures as { slug, label }}
 			<li><a href="/{slug}">{label}</a></li>
 		{/each}
+		<li><a href="/teaching">Teaching</a></li>
 	</ul>
 </main>
 
